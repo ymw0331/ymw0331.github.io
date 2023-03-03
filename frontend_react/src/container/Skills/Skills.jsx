@@ -22,7 +22,7 @@ const Skills = () =>
 
     client.fetch( experiencesQuery ).then( ( data ) =>
     {
-      console.log( data );
+      // console.log( data );
       setExperience( data );
     } );
   }, [] );
