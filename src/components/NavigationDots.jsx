@@ -1,14 +1,15 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 
-const NavigationDots = ( { active } ) => (
+const NavigationDots = ({ active }) => (
   <div className="app__navigation">
-    { [ 'home', 'about', 'work', 'skills', 'contact' ].map( ( item, index ) => (
-      <a href={ `#${ item }` }
-        key={ item + index }
+    {['home', 'about', 'work', 'skills', 'certificates', 'contact'].map((item, index) => (
+      <a href={`#${item}`}
+        key={item + index}
         className="app__navigation-dot"
-        style={ active === item ? { backgroundColor: '#313BAC' } : {} }
+        style={active === item ? { backgroundColor: '#313BAC' } : {}}
       />
-    ) ) }
+    ))}
   </div>
 );
 

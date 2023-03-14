@@ -1,10 +1,9 @@
 import React from 'react';
-import { About, Footer, Header, Skills, Work } from './container';
+import { About, Footer, Header, Skills, Certificates, Work } from './container';
 import { Navbar } from './components';
 import './App.scss';
 
-const App = () =>
-{
+const App = () => {
   return (
     <div className='app'>
       <Navbar />
@@ -12,7 +11,8 @@ const App = () =>
       <About />
       <Work />
       <Skills />
-      {/* <Testimonial /> */ }
+      {/* <Testimonial /> */}
+      <Certificates />
       <Footer />
     </div>
   );
