@@ -1,8 +1,8 @@
 import React from 'react'
 import './Certificates.scss'
+import { AppWrap, MotionWrap } from '../../wrapper';
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
 
 const Certificates = () => {
     return (
