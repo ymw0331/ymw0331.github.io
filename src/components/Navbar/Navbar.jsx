@@ -1,29 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import './Navbar.scss';
 import { images } from '../../constants';
+import { DarkModeContext } from "../../contexts/DarkModeContext";
+import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import './Navbar.scss';
+
+
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+
+  const [toggleNavLink, setToggleNavLink] = useState(false);
+  const { toggle, darkMode } = useContext(DarkModeContext);
 
   return (
 
     <nav className="app__navbar">
 
-      <div className="main-header__logo-container">
-        <div
-          className="main-header__logo-img-cont">
-        </div>
-      </div>
-
       <div className="app__navbar-logo">
+
         <img
-          className="main-header__logo-img"
           src={images.ymwLinkedInCircle}
           alt="logo"
         />
-        <h4 className="main-header__logo-text">Wayne Yong</h4>
+        <h4 >Wayne Yong</h4>
+
       </div>
 
 
@@ -36,20 +38,26 @@ const Navbar = () => {
         ))}
       </ul>
 
+      <div className="app__navbar-theme">
+        {/* <DarkModeOutlinedIcon /> */}
+        {
+          darkMode ? <WbSunnyOutlinedIcon onClick={toggle} /> : <DarkModeOutlinedIcon onClick={toggle} />
+        }
+      </div>
 
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        <HiMenuAlt4 onClick={() => setToggleNavLink(true)} />
 
-        {toggle && (
+        {toggleNavLink && (
           <motion.div
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: 'easeOut' }}
           >
-            <HiX onClick={() => setToggle(false)} />
+            <HiX onClick={() => setToggleNavLink(false)} />
             <ul>
               {['home', 'about', 'work', 'skills', 'certificates', 'contact'].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                  <a href={`#${item}`} onClick={() => setToggleNavLink(false)}>
                     {item}
                   </a>
                 </li>
@@ -61,10 +69,6 @@ const Navbar = () => {
 
       </div>
     </nav>
-
-
-
-
 
   );
 };

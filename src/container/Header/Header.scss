@@ -1,10 +1,7 @@
 .app__header {
   flex: 1;
   width: 100%;
-  height: 100%;
   flex-direction: row;
-
-  padding: 6rem 2rem 0;
 
   @media screen and (min-width:2000px) {
     padding-top: 8rem;
@@ -17,7 +14,6 @@
   @media screen and (max-width:400px) {
     padding: 6rem 1rem 2rem;
   }
-
 }
 
 .app__header-intro {
@@ -32,7 +28,7 @@
 
   .site-title h3 {
     padding-top: 5%;
-    font-weight: 500;
+    font-weight: 600;
   }
 
 
@@ -67,7 +63,6 @@
     text-decoration: none;
     color: #fff;
   }
-
 }
 
 
@@ -75,7 +70,7 @@
 .app__header-buttons {
   .button {
     padding: .8rem 2.2rem;
-    font: normal 500 16px/20px var(--roboto);
+    font: normal 500 16px/20px var(--font-base);
     position: relative;
     border: 3px solid transparent;
     border-radius: 4px;
@@ -85,7 +80,7 @@
     background: var(--gradient-color);
     background-clip: padding-box;
     color: whitesmoke;
-    transition: background .6s ease;
+    // transition: background .6s ease;
     box-shadow: var(--box-shadow);
   }
 
@@ -111,7 +106,7 @@
   .button.secondary-button {
     background: white;
     background-clip: padding-box;
-    transition: background .6s ease;
+    // transition: background .6s ease;
   }
 
   .button.secondary-button:hover {
@@ -155,183 +150,18 @@
 }
 
 
+// #home {
+//   position: relative;
+//   background: url('../../assets//bgIMG.png');
+//   background-size: cover;
+//   background-repeat: repeat;
+//   background-position: center;
 
-#home {
-  position: relative;
-  background: url('../../assets//bgIMG.png');
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
+//   .app__wrapper {
+//     padding: 0;
 
-  .app__wrapper {
-    padding: 0;
-
-    .copyright {
-      display: none
-    }
-  }
-}
-
-
-
-
-// .app__header-info {
-//   flex: 0.65;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: flex-start;
-//   height: 100%;
-
-//   @media screen and (max-width: 2000px) {
-//     width: 100%;
-//     margin-right: 0rem;
-//   }
-// }
-
-
-// .app__header-badge {
-//   width: 100%;
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: flex-end;
-//   flex-direction: column;
-
-//   .badge-cmp,
-//   .tag-cmp {
-//     padding: 1rem 2rem;
-//     background: var(--white-color);
-//     border-radius: 15px;
-//     flex-direction: row;
-//     width: auto;
-
-//     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-//   }
-
-//   .tag-cmp {
-//     flex-direction: column;
-//     margin-top: 3rem;
-
-//     p {
-//       width: 100%;
-//       text-transform: uppercase;
-//       text-align: right;
+//     .copyright {
+//       display: none
 //     }
 //   }
-
-//   span {
-//     font-size: 2.5rem;
-
-//     @media screen and (min-width: 2000px) {
-//       font-size: 5rem;
-//     }
-//   }
-
-//   @media screen and (max-width: 1200px) {
-//     justify-content: flex-start;
-//     align-items: flex-start;
-//   }
 // }
-
-.app__header-circles {
-  flex: 0.75;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  height: 100%;
-  margin-left: 1rem;
-  padding-left: 200px;
-
-  div {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-
-    background: var(--white-color);
-
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-
-    img {
-      width: 60%;
-      height: 60%
-    }
-  }
-
-  // circle
-  div:nth-child(1) {
-    width: 100px;
-    height: 100px;
-  }
-
-  div:nth-child(2) {
-    margin: 1.75rem;
-    width: 150px;
-    height: 150px;
-  }
-
-  div:nth-child(3) {
-    width: 70px;
-    height: 70px;
-  }
-
-  @media screen and (min-width: 2000px) {
-    div:nth-child(2) {
-      width: 400px;
-      height: 400px;
-    }
-
-    div:nth-child(3) {
-      width: 170px;
-      height: 170px;
-    }
-
-    div:nth-child(1) {
-      width: 200px;
-      height: 200px;
-    }
-  }
-
-  @media screen and (max-width: 1200px) {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 0;
-
-    div {
-      margin: 1rem;
-    }
-  }
-}
-
-
-.app__header-img {
-  flex: 1;
-  height: 100%;
-
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  position: relative;
-
-
-  img {
-    width: 100%;
-    object-fit: contain;
-    z-index: 1;
-  }
-
-  .overlay_circle {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    width: 100%;
-    height: 90%;
-  }
-
-  @media screen and (max-width:1200px) {
-    margin: 2rem 0;
-  }
-}

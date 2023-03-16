@@ -1,53 +1,4 @@
-/* Text Selection Start */
-::-moz-selection {
-  /* Code for Firefox */
-  color: black;
-  background: yellow;
-}
-
-::selection {
-  color: black;
-  background: yellow;
-}
-
-mark {
-  color: black;
-  background-color: yellow;
-}
-
-mark:hover {
-  color: black !important;
-  background-color: yellow !important;
-  cursor: pointer;
-  -webkit-text-fill-color: black;
-}
-/* Text selection End */
-
-
-/* Scroll Bar Start */
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 5px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--secondary-color);
-  border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #000;
-}
-/* Scroll Bar End */
-
+@import "./index.scss";
 
 .app {
   background-color: var(--primary-color);
@@ -55,11 +6,16 @@ mark:hover {
 }
 
 .app__whitebg {
-  background-color: var(--white-color);
+  @include themify($themes) {
+    background-color: themed("bg");
+  }
 }
 
 .app__primarybg {
-  background-color: var(--primary-color);
+  @include themify($themes) {
+    // background-color: var(--primary-color);
+    background-color: themed("bgSoft");
+  }
 }
 
 .app__container {
@@ -71,19 +27,27 @@ mark:hover {
 }
 
 .app__flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include themify($themes) {
+    color: themed("textColor");
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .app__wrapper {
-  flex: 1;
-  width: 100%;
-  flex-direction: column;
-  padding: 4rem 2rem;
+  @include themify($themes) {
 
-  @media screen and (max-width: 450px) {
-    padding: 4rem 1rem 2rem;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    color: themed("bg");
+
+    @media screen and (max-width: 450px) {
+      padding: 4rem 1rem 2rem;
+    }
   }
 }
 
@@ -99,130 +63,157 @@ mark:hover {
   p {
     text-transform: uppercase;
     color: var(--black-color);
+    // color: themed("textColor");
+
   }
 }
 
 .head-text {
-  font-size: 2.75rem;
-  font-weight: 800;
-  text-align: center;
-  color: var(--black-color);
-  text-transform: capitalize;
+  @include themify($themes) {
 
-  span {
-    color: var(--secondary-color);
-  }
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    // color: var(--black-color);
+    color: themed("textColor");
+    text-transform: capitalize;
 
-  @media screen and (min-width: 2000px) {
-    font-size: 4rem;
-  }
+    span {
+      color: var(--secondary-color);
+    }
 
-  @media screen and (max-width: 450px) {
-    font-size: 2rem;
+    @media screen and (min-width: 2000px) {
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 2rem;
+    }
   }
 }
 
 .p-text {
-  font-size: 0.8rem;
-  text-align: left;
-  color: var(--gray-color);
-  line-height: 1.5;
+  @include themify($themes) {
 
-  @media screen and (min-width: 2000px) {
-    font-size: 1.75rem;
+    font-size: 0.8rem;
+    text-align: left;
+    // color: var(--gray-color);
+    color: themed("textColor");
+
+    line-height: 1.5;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
   }
 }
 
 .bold-text {
-  font-size: 1rem;
-  font-weight: 800;
-  color: var(--black-color);
-  text-align: left;
+  @include themify($themes) {
 
-  @media screen and (min-width: 2000px) {
-    font-size: 2rem;
-  }
+    font-size: 1rem;
+    font-weight: 800;
+    // color: var(--black-color);
+    color: themed("textColor");
 
-  @media screen and (max-width: 450px) {
-    font-size: 0.9rem;
+    text-align: left;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
   }
 }
 
 .app__social {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-
-  padding: 1rem;
-
-  div {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--white-color);
-    margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
-
+  @include themify($themes) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    // background-color: themed("bg");
 
-    transition: all 0.3s ease-in-out;
+    div {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      // background-color: var(--white-color);
+      background-color: themed("bg");
 
-    svg {
-      width: 15px;
-      height: 15px;
-      color: var(--gray-color);
-    }
+      margin: 0.25rem 0;
+      border: 1px solid themed("border");
 
-    &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: all 0.3s ease-in-out;
 
       svg {
-        color: var(--white-color);
+        width: 15px;
+        height: 15px;
+        // color: var(--gray-color);
+        color: themed("logo")
       }
-    }
 
-    @media screen and (min-width: 2000px) {
-      width: 70px;
-      height: 70px;
+      &:hover {
+        // background-color: var(--secondary-color);
+        background-color: themed("bg");
 
-      margin: 0.5rem 0;
+        border-color: var(--secondary-color);
 
-      svg {
-        width: 30px;
-        height: 30px;
+        svg {
+          color: var(--white-color);
+        }
+      }
+
+      @media screen and (min-width: 2000px) {
+        width: 70px;
+        height: 70px;
+
+        margin: 0.5rem 0;
+
+        svg {
+          width: 30px;
+          height: 30px;
+        }
       }
     }
   }
+
 }
 
 .app__navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include themify($themes) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // background-color: themed("bg");
 
-  padding: 1rem;
+    padding: 1rem;
 
-  .app__navigation-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #cbcbcb;
-    margin: 0.5rem;
+    .app__navigation-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #cbcbcb;
+      margin: 0.5rem;
 
-    transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
 
-    &:hover {
-      background-color: var(--secondary-color);
-    }
+      &:hover {
+        background-color: var(--secondary-color);
+      }
 
-    @media screen and (min-width: 2000px) {
-      width: 20px;
-      height: 20px;
+      @media screen and (min-width: 2000px) {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }

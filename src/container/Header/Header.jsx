@@ -1,21 +1,10 @@
 import React, { useRef, useEffect } from 'react';
-import "./Header.scss";
-import { AppWrap } from '../../wrapper';
+import { AppWrap, MotionWrap } from '../../wrapper';
 import { motion } from 'framer-motion';
-import { images } from '../../constants';
 import lottie from 'lottie-web'
 import Typed from 'typed.js';
 
-const scaleVariants = {
-  whileInView: {
-    scale: [0, 1],
-    opacity: [0, 1],
-    transition: {
-      duration: 1,
-      ease: 'easeInOut'
-    }
-  }
-};
+import "./Header.scss";
 
 
 const Header = () => {
@@ -23,20 +12,16 @@ const Header = () => {
   const lottieContainer = useRef(null)
 
   useEffect(() => {
-
     lottie.loadAnimation({
       container: lottieContainer.current,
       renderer: 'svg',
       load: true,
       autoplay: true,
-      animationData: require('../../assets/banner-coder.json')
+      animationData: require('../../assets/banner-coding.json')
     })
-
   }, [])
 
-
   useEffect(() => {
-
     const typed = new Typed(element.current, {
       strings: [
         "Enthusiastic Dev 😎",
@@ -57,16 +42,14 @@ const Header = () => {
     return () => {
       typed.destroy();
     };
-
   }, []);
+
 
   return (
     <>
       <div className='app__header app__flex'>
 
         <motion.div>
-
-
           <div className="app__header-intro">
             <h3 className="title-text text-uppercase">Hey, I am MingWei👋</h3>
             <h4 className="text-uppercase">I am a {""}
@@ -91,7 +74,6 @@ const Header = () => {
             <p>
               <iframe
                 src="https://ghbtns.com/github-btn.html?user=ymw0331&type=follow&count=true&size=large"
-                frameborder="0"
                 width="230"
                 height="30"
                 title="GitHub">
@@ -100,7 +82,6 @@ const Header = () => {
 
               <iframe
                 src="https://ghbtns.com/github-btn.html?user=ymw0331&repo=ymw0331.github.io&type=star&count=true&size=large"
-                frameborder="0"
                 width="170"
                 height="30"
                 title="GitHub">
@@ -116,7 +97,7 @@ const Header = () => {
                 <button type="button" className="btn button primary-button mr-4 text-uppercase first-btn">
 
                   <a
-                    href="./assets/Alok_Raj.pdf" target="_blank">RESUME &nbsp;<i
+                    href="./assets/ymw.pdf" target="_blank">RESUME &nbsp;<i
                       className="fas fa-external-link-alt" aria-hidden="true"></i>
 
                   </a>
@@ -137,25 +118,12 @@ const Header = () => {
           style={{ height: "500px", width: "500px" }}
           ref={lottieContainer}></div> */}
 
-        {/* 
-        <motion.div
-          variant={scaleVariants}
-          whileInView={scaleVariants.whileInView}
-          className="app__header-circles"
-        >
-          {[images.flutter, images.redux, images.sass].map((circle, index) => (
-            <div className="circle-cmp app__flex" key={`circle-${index}`}>
-              <img src={circle} alt="profile_bg" />
-            </div>
-          ))}
-        </motion.div> */}
-
-
-
-
       </div>
+
     </>
   );
 };
 
-export default AppWrap(Header, 'home');
+export default AppWrap(MotionWrap(Header, 'app__header'),
+  "home",
+  "app__primarybg");
