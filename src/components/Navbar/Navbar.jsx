@@ -20,11 +20,15 @@ const Navbar = () => {
 
       <div className="app__navbar-logo">
 
-        <img
-          src={images.ymwLinkedInCircle}
-          alt="logo"
-        />
-        <h4 >Wayne Yong</h4>
+        <a href="#home">
+          <img
+            src={images.ymwLinkedInCircle}
+            alt="logo"
+          />
+        </a>
+        <a href="#home">
+          <h4 >Wayne Yong</h4>
+        </a>
 
       </div>
 
@@ -54,6 +58,7 @@ const Navbar = () => {
             transition={{ duration: 0.85, ease: 'easeOut' }}
           >
             <HiX onClick={() => setToggleNavLink(false)} />
+
             <ul>
               {['home', 'about', 'work', 'skills', 'certificates', 'contact'].map((item) => (
                 <li key={item}>

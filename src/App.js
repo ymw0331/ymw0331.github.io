@@ -11,15 +11,19 @@ const App = () => {
 
   return (
     <div className={`theme-${darkMode ? "dark" : "light"}`}>
-    {/* <div className={'theme-dark'}> */}
-      <Navbar />
-      <Header />
-      <About />
-      <Work />
-      <Skills />
-      {/* <Testimonial /> */}
-      <Certificates />
-      <Footer />
+      {/* <div className={'theme-dark'}> */}
+      <div className="app">
+        <Navbar />
+        <Header />
+        <About />
+        <Work />
+        <Skills />
+        {/* <Testimonial /> */}
+        <Certificates />
+        <Footer />
+
+      </div>
+
     </div>
   );
 };

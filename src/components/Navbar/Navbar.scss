@@ -4,7 +4,7 @@
 .app__navbar {
   @include themify($themes) {
     width: 100%;
-    height: 7vh;
+    height: 7.5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,18 +29,28 @@
       padding-left: 25px;
 
       img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         object-fit: cover;
 
         @media screen and (min-width:2000px) {
           width: 180px;
           height: 40px;
         }
+
+        // @media screen and(min-width: 300px) {
+        //   img{
+        //     padding-left: 5px;
+        //   }
+        // }
+      }
+
+      a {
+        text-decoration: none;
       }
 
       h4 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         letter-spacing: 1px;
         // color: var(--secondary-color);
         color: themed("logo");
@@ -53,7 +63,13 @@
         font-family: var(--font-logo);
 
         @media screen and (max-width:900px) {
-          display: none;
+          // display: none;
+          font-size: 1.3rem;
+        }
+
+        @media screen and (max-width:500px) {
+          // display: none;
+          font-size: 1rem;
         }
 
       }
@@ -149,8 +165,8 @@
 
       svg {
         width: 70%;
-        height: 70%;
-        color: var(--white-color);
+        height: 100%;
+        color: themed("bg");
       }
 
       div {
@@ -168,8 +184,10 @@
         align-items: flex-end;
         flex-direction: column;
 
-        background: url('../../assets/bgWhite.png');
-        background-color: var(--white-color);
+        // background: url('../../assets/bgWhite.png');
+        // background-color: var(--white-color);
+        background-color: themed("bgSoft");
+        color: themed("bgSoft");
         background-size: cover;
         background-repeat: repeat;
 
