@@ -40,7 +40,7 @@ const Certificates = () => {
             <h2 className="head-text">Certificates & Awards</h2>
 
             <div className="app__work-filter">
-                {['Udemy', 'Huawei', 'TMForum'].map((item, index) => (
+                {['Udemy', 'Huawei', 'TMForum', 'All'].map((item, index) => (
                     <div
                         key={index}
                         onClick={() => handleCertFilter(item)}
@@ -107,7 +107,7 @@ const Certificates = () => {
 }
 
 export default AppWrap(
-    MotionWrap(Certificates, 'app__certificates'),
+    MotionWrap(Certificates, 'app__works'),
     "certificates",
     "app__primarybg"
 );
