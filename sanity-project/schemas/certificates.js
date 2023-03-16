@@ -8,11 +8,11 @@ export default {
             title: 'Title',
             type: 'string',
         },
-        {
-            name: 'description',
-            title: 'Description',
-            type: 'string',
-        },
+        // {
+        //     name: 'description',
+        //     title: 'Description',
+        //     type: 'string',
+        // },
         {
             name: 'certificateLink',
             title: 'Certificate Link',

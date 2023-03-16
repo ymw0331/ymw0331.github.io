@@ -97,56 +97,59 @@
 
 
   .app__navbar-links {
-    flex: 2;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 100px;
-    letter-spacing: 3px;
-    padding-top: 10px;
+    @include themify($themes) {
+
+      flex: 2;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-right: 100px;
+      letter-spacing: 3px;
+      padding-top: 10px;
 
 
-    list-style: none;
+      list-style: none;
 
-    li {
-      margin: 0 1rem;
-      cursor: pointer;
-      flex-direction: column;
-
-
-      div {
-        width: 5px;
-        height: 5px;
-        background: transparent;
-        border-radius: 50%;
-        margin-bottom: 5px;
-      }
-
-      a {
-        color: var(--gray-color);
-        text-decoration: none;
+      li {
+        margin: 0 1rem;
+        cursor: pointer;
         flex-direction: column;
 
-        text-transform: uppercase;
-        font-weight: 500;
+
+        div {
+          width: 5px;
+          height: 5px;
+          background: transparent;
+          border-radius: 50%;
+          margin-bottom: 5px;
+        }
+
+        a {
+          color: themed("textColorSoft");
+          text-decoration: none;
+          flex-direction: column;
+
+          text-transform: uppercase;
+          font-weight: 500;
 
 
-        transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--secondary-color);
+          }
+        }
 
         &:hover {
-          color: var(--secondary-color);
+          div {
+            background: var(--secondary-color);
+          }
         }
       }
 
-      &:hover {
-        div {
-          background: var(--secondary-color);
-        }
+      @media screen and (max-width:900px) {
+        display: none;
       }
-    }
-
-    @media screen and (max-width:900px) {
-      display: none;
     }
   }
 
