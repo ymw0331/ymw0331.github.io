@@ -1,8 +1,11 @@
 import React, { useContext } from 'react';
-import { About, Footer, Header, Skills, Certificates, Work } from './container';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { About, Footer, Header, Skills, Projects, Certificates } from './container';
 import { Navbar } from './components';
 import { DarkModeContext } from "./contexts/DarkModeContext";
 import './App.scss';
+
+
 
 const App = () => {
 
@@ -13,15 +16,24 @@ const App = () => {
     <div className={`theme-${darkMode ? "dark" : "light"}`}>
       {/* <div className={'theme-dark'}> */}
       <div className="app">
+        {/* <BrowserRouter> */}
+        {/* <Routes>
+
+          <Route path='/categories' element={<Certificates />} />
+
+        </Routes> */}
+
         <Navbar />
         <Header />
         <About />
-        <Work />
+        <Projects />
         <Skills />
         {/* <Testimonial /> */}
         <Certificates />
         <Footer />
 
+
+        {/* </BrowserRouter> */}
       </div>
 
     </div>

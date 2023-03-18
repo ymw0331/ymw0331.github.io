@@ -20,13 +20,13 @@ const Navbar = () => {
 
       <div className="app__navbar-logo">
 
-        <a href="#home">
+        <a href="/#home">
           <img
             src={images.ymwLinkedInCircle}
             alt="logo"
           />
         </a>
-        <a href="#home">
+        <a href="/#home">
           <h4 >Wayne Yong</h4>
         </a>
 
@@ -34,7 +34,7 @@ const Navbar = () => {
 
 
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'skills', 'certificates', 'contact'].map((item) => (
+        {['about', 'projects', 'skills', 'certificates', 'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -60,7 +60,7 @@ const Navbar = () => {
             <HiX onClick={() => setToggleNavLink(false)} />
 
             <ul>
-              {['home', 'about', 'work', 'skills', 'certificates', 'contact'].map((item) => (
+              {['home', 'about', 'projects', 'skills', 'certificates', 'contact'].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggleNavLink(false)}>
                     {item}

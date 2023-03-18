@@ -1,12 +1,12 @@
 @import "../../index.scss";
 
-.app__works {
+.app__projects {
   flex: 1;
   width: 100%;
   flex-direction: column;
 }
 
-.app__work-filter {
+.app__project-filter {
   @include themify($themes) {
 
     display: flex;
@@ -17,7 +17,7 @@
 
     margin: 4rem 0 2rem;
 
-    .app__work-filter-item {
+    .app__project-filter-item {
       padding: 0.5rem 1rem;
       border-radius: 0.5rem;
       // background-color: #fff;
@@ -48,7 +48,7 @@
   }
 }
 
-.app__work-portfolio {
+.app__project-portfolio {
   @include themify($themes) {
 
     display: flex;
@@ -56,7 +56,7 @@
     justify-content: center;
     align-items: center;
 
-    .app__work-item {
+    .app__project-item {
       width: 270px;
       flex-direction: column;
 
@@ -87,7 +87,7 @@
   }
 }
 
-.app__work-img {
+.app__project-img {
   @include themify($themes) {
 
     width: 100%;
@@ -108,7 +108,7 @@
   }
 }
 
-.app__work-hover {
+.app__project-hover {
   @include themify($themes) {
 
     position: absolute;
@@ -147,7 +147,7 @@
   }
 }
 
-.app__work-content {
+.app__project-content {
   @include themify($themes) {
     padding: 0.5rem;
     width: 100%;
@@ -171,7 +171,7 @@
 
     }
 
-    .app__work-tag {
+    .app__project-tag {
       position: absolute;
       padding: 0.5rem 1rem;
       border-radius: 10px;

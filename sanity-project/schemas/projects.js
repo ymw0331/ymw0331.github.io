@@ -1,6 +1,6 @@
 export default {
-  name: 'works',
-  title: 'Works',
+  name: 'projects',
+  title: 'Projects',
   type: 'document',
   fields: [
     {
@@ -8,7 +8,6 @@ export default {
       title: 'Title',
       type: 'string',
     },
-
     {
       name: 'description',
       title: 'Description',

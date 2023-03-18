@@ -69,7 +69,7 @@
 
         @media screen and (max-width:500px) {
           // display: none;
-          font-size: 1rem;
+          font-size: 1.2rem;
         }
 
       }
@@ -90,7 +90,8 @@
     }
 
     @media screen and (min-width:400px) {
-      padding-right: 75px;
+      padding-right: 55px;
+      padding-left: 5px;
     }
 
   }
