@@ -129,11 +129,8 @@
           color: themed("textColorSoft");
           text-decoration: none;
           flex-direction: column;
-
           text-transform: uppercase;
           font-weight: 500;
-
-
           transition: all 0.3s ease-in-out;
 
           &:hover {
@@ -152,6 +149,13 @@
         display: none;
       }
     }
+  }
+
+  .active-link {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .app__navbar-menu {
