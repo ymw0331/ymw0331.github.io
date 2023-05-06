@@ -51,12 +51,15 @@ const Header = () => {
 
         <motion.div>
           <div className="app__header-intro">
+
             <h3 className="title-text text-uppercase">Hey, I am MingWei👋</h3>
-            <h4 className="text-uppercase">I am a {""}
+            <h4 className="i-am-title text-uppercase">I am a {""}
               <span id="subheading"
                 ref={element}
               >
+
               </span></h4>
+
             <hr />
             <p>💻 An information systems engineering 2021 graduate.</p>
 
@@ -73,6 +76,7 @@ const Header = () => {
 
             <p>
               <iframe
+                frameBorder="0"
                 src="https://ghbtns.com/github-btn.html?user=ymw0331&type=follow&count=true&size=large"
                 width="230"
                 height="30"
@@ -81,6 +85,7 @@ const Header = () => {
               </iframe>
 
               <iframe
+                frameBorder="0"
                 src="https://ghbtns.com/github-btn.html?user=ymw0331&repo=ymw0331.github.io&type=star&count=true&size=large"
                 width="170"
                 height="30"
@@ -90,19 +95,15 @@ const Header = () => {
 
             <hr />
 
-
             <div className="app__header-buttons">
               <div className="d-flex flex-row flex-wrap">
-
                 <button type="button" className="btn button primary-button mr-4 text-uppercase first-btn">
-
                   <a
                     href="./assets/ymw.pdf" target="_blank">RESUME &nbsp;<i
                       className="fas fa-external-link-alt" aria-hidden="true"></i>
 
                   </a>
                 </button>
-
 
                 <button type="button" className="btn button secondary-button text-uppercase second-btn">
                   <a
@@ -112,6 +113,8 @@ const Header = () => {
               </div>
             </div>
           </div>
+
+
         </motion.div>
 
         {/* <div className='lottieContainer'

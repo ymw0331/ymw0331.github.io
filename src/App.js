@@ -1,6 +1,6 @@
 import React, { useContext, Fragment } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { About, Footer, Header, Skills, Projects, Certificates } from './container';
+import { About, Footer, Header, Skills, Projects, Certificates, Testimonial, Experiences } from './container';
 import { Navbar } from './components';
 import { DarkModeContext } from "./contexts/DarkModeContext";
 import './App.scss';
@@ -22,7 +22,9 @@ const App = () => {
                 <Navbar />
                 <Header />
                 <About />
+                <Experiences />
                 <Skills />
+                {/* <Testimonial /> */}
                 {/* <Projects />
                 <Certificates /> */}
                 <Footer />

@@ -27,6 +27,8 @@
       justify-content: flex-start;
       align-items: center;
       padding-left: 25px;
+      padding-top: 5px;
+
 
       img {
         width: 40px;
@@ -56,8 +58,8 @@
         color: themed("logo");
         font-weight: 1000;
         padding-left: 10px;
-        padding-top: 10px;
-        padding-bottom: 5px;
+        padding-top: 15px;
+        padding-bottom: 25px;
         text-transform: uppercase;
         // font: normal bold 45px/ 72px var(--font-logo);
         font-family: var(--font-logo);
@@ -106,7 +108,8 @@
       align-items: flex-end;
       padding-right: 100px;
       letter-spacing: 3px;
-      padding-top: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
 
 
       list-style: none;
@@ -242,7 +245,7 @@
         }
       }
 
-      @media screen and (min-width:900px) {
+      @media screen and (min-width:1000px) {
         display: none;
       }
     }

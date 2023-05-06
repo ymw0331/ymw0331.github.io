@@ -3,6 +3,9 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { images } from '../../constants';
 import { client } from '../../client';
 import "./Footer.scss";
+import emailjs from '@emailjs/browser';
+
+
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' }); const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -12,7 +15,6 @@ const Footer = () => {
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
-
     setFormData({ ...formData, [name]: value });
   };
 
@@ -20,6 +22,7 @@ const Footer = () => {
   const handleSubmit = () => {
     setLoading(true);
 
+    // Send to Sanity CMS
     const contact = {
       _type: 'contact',
       name: name,
@@ -31,6 +34,28 @@ const Footer = () => {
       .then(() => {
         setLoading(false);
         setIsFormSubmitted(true);
+      });
+
+
+    // Send email via EmailJS
+    const templateParams = {
+      from_name: name + " " + email,
+      to_name: "ymw0331@gmail.com",
+      feedback: message
+    };
+
+    const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID
+    const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
+    const EMAILJS_PUBLIC_API_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_API_KEY
+
+    emailjs
+      .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_API_KEY)
+      .then(function (response) {
+        console.log('SUCCESS EMAIL SENT!', response.status, response.text);
+        setLoading(false);
+        setIsFormSubmitted(true);
+      }, function (error) {
+        console.log('FAILED...', error);
       });
 
   };

@@ -15,6 +15,7 @@ const Certificates = () => {
         const query = '*[_type == "certificates"]';
 
         client.fetch(query).then((data) => {
+            console.log("Numbers of Certs ", certs.length)
             setCerts(data);
             setFilterCert(data);
         });
@@ -40,7 +41,7 @@ const Certificates = () => {
             <h2 className="head-text">Certificates & Awards</h2>
 
             <div className="app__cert-filter">
-                {['AWS', 'Huawei', 'TMForum', 'Udemy', 'All'].map((item, index) => (
+                {['AWS', 'TMForum', 'Huawei', 'Udemy', 'Sololearn', 'All'].map((item, index) => (
                     <div
                         key={index}
                         onClick={() => handleCertFilter(item)}

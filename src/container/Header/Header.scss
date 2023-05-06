@@ -26,21 +26,22 @@
 
   p {
     font-size: 20px;
-  }
-
-  .site-title h3 {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-weight: 550;
-  }
-
-
-  #subheading {
-    color: var(--secondary-color);
+    padding: 7.5px;
   }
 
   .title-text {
     font: normal bold 45px/ 72px var(--font-base);
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
+
+  .i-am-title {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+
+  #subheading {
+    color: var(--secondary-color);
   }
 
   .text-uppercase {
@@ -69,10 +70,12 @@
 }
 
 
-/* Buttons */
+
 .app__header-buttons {
+  padding-top: 10px;
+
   .button {
-    padding: .8rem 2.2rem;
+    padding: 0.8rem 2.2rem;
     font: normal 500 16px/20px var(--font-base);
     position: relative;
     border: 3px solid transparent;
@@ -83,7 +86,6 @@
     background: var(--gradient-color);
     background-clip: padding-box;
     color: whitesmoke;
-    // transition: background .6s ease;
     box-shadow: var(--box-shadow);
   }
 
@@ -109,7 +111,6 @@
   .button.secondary-button {
     background: white;
     background-clip: padding-box;
-    // transition: background .6s ease;
   }
 
   .button.secondary-button:hover {
@@ -151,6 +152,7 @@
     color: black;
   }
 }
+
 
 
 // #home {

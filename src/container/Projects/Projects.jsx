@@ -16,6 +16,7 @@ const Projects = () => {
     const query = '*[_type == "projects"]';
 
     client.fetch(query).then((data) => {
+      console.log("Numbers of Projects ", projects.length)
       setProjects(data);
       setFilterProject(data);
     });
@@ -40,7 +41,7 @@ const Projects = () => {
 
       <h2 className="head-text">My creative <span>Portfolio</span></h2>
       <div className="app__project-filter">
-        {['Node', 'React', 'MERN', 'Sanity', 'VanillaJS', 'All'].map((item, index) => (
+        {['Node', 'React', 'MERN', 'VanillaJS', 'Typescript', 'Sanity', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleProjectFilter(item)}
