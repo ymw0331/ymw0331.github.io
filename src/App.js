@@ -15,7 +15,7 @@ const App = () => {
     <div className={`theme-${darkMode ? "dark" : "light"}`}>
       <div className="app">
 
-        <BrowserRouter forceRefresh>
+        <BrowserRouter forceRefresh={true}>
           <Routes>
             <Route path="/" element={
               <Fragment>

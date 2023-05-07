@@ -37,6 +37,8 @@ const Experiences = () => {
                     <div className="col">
 
                         <motion.div
+                            whileInView={{ scale: [0, 1] }}
+                            transition={{ duration: 0.25 }}
                             className="tabs"
                         >
                             {workExperience?.map((workEx, index) => (
