@@ -2,37 +2,37 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
-import "./Experiences.scss";
+import "./Educations.scss";
 
-const Experiences = () => {
+const Educations = () => {
 
     //states
-    const [activeExpTabs, setActiveExpTabs] = useState([0]); // Set the first tab to be active by default
-    const [workExperience, setWorkExperience] = useState([]);
+    const [activeEduTabs, seActiveEduTabs] = useState([0]); // Set the first tab to be active by default
+    const [educations, setEducations] = useState([]);
 
     useEffect(() => {
-        const workExperienceQuery = '*[_type == "workExperience"]';
-        client.fetch(workExperienceQuery).then((data) => {
+        const educationsQuery = '*[_type == "educations"]';
+        client.fetch(educationsQuery).then((data) => {
             // console.log(data);
-            setWorkExperience(data);
+            setEducations(data);
         });
     }, []);
 
 
 
     const toggleTab = (tabIndex) => {
-        if (activeExpTabs.includes(tabIndex)) {
-            setActiveExpTabs(activeExpTabs.filter((index) => index !== tabIndex));
+        if (activeEduTabs.includes(tabIndex)) {
+            seActiveEduTabs(activeEduTabs.filter((index) => index !== tabIndex));
         } else {
-            setActiveExpTabs([...activeExpTabs, tabIndex]);
+            seActiveEduTabs([...activeEduTabs, tabIndex]);
         }
     };
 
     return (
         <>
-            <h2 className='head-text'>Experiences</h2>
+            <h2 className='head-text'>Educations</h2>
 
-            <div className="app__experiences-container">
+            <div className="app__educations-container">
                 <div className="row">
                     <div className="col">
 
@@ -41,23 +41,23 @@ const Experiences = () => {
                             transition={{ duration: 0.25 }}
                             className="tabs"
                         >
-                            {workExperience?.map((workEx, index) => (
+                            {educations?.map((edu, index) => (
                                 <div
                                     key={index}
-                                    className={`tab ${activeExpTabs.includes(index) ? "active" : ""}`}
+                                    className={`tab ${activeEduTabs.includes(index) ? "active" : ""}`}
                                 >
                                     <input
-                                        className="app__experiences-tabs"
+                                        className="app__educations-tabs"
                                         type="checkbox"
                                         id={`chck${index}`}
-                                        checked={activeExpTabs.includes(index)}
+                                        checked={activeEduTabs.includes(index)}
                                         onChange={() => toggleTab(index)}
                                     />
                                     <label className="tab-label" htmlFor={`chck${index}`}>
-                                        🏢  {workEx.company}  💼  {workEx.name}  📅  {workEx.year}
+                                        🏫 {edu.university}     📅  {edu.year}
                                     </label>
                                     <div className="tab-content">
-                                        {workEx.desc.map((desc, i) => (
+                                        {edu.desc.map((desc, i) => (
                                             <li key={i}>{desc}</li>
                                         ))}
                                     </div>
@@ -72,7 +72,7 @@ const Experiences = () => {
 };
 
 export default AppWrap(
-    MotionWrap(Experiences, 'app__experiences'),
+    MotionWrap(Educations, 'app__experiences'),
     "experiences",
-    "app__primarybg"
+    "app__whitebg"
 );

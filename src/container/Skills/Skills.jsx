@@ -16,6 +16,19 @@ const Skills = () => {
 
   }, []);
 
+  const sortedSkills = skills.sort((a, b) => {
+    const nameA = a.name.toLowerCase();
+    const nameB = b.name.toLowerCase();
+
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
+  });
+
   return (
     <>
       <h2 className='head-text'>Skills</h2>
@@ -24,7 +37,7 @@ const Skills = () => {
         <motion.div
           className='app__skills-list'
         >
-          {skills?.map((skill) => (
+          {sortedSkills?.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
@@ -92,5 +105,5 @@ const Skills = () => {
 export default AppWrap(
   MotionWrap(Skills, 'app__skills'),
   "skills",
-  "app__whitebg"
+  "app__primarybg"
 );
