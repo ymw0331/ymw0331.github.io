@@ -25,10 +25,9 @@ const Header = () => {
     const typed = new Typed(element.current, {
       strings: [
         "Enthusiastic Dev 😎",
-        "Full stack Developer 💻",
-        "Mern stack Dev 📱",
-        "AWS Cloud Practitioner ☁️",
-        "React/React Native 🌐",
+        "Full Stack Developer 💻",
+        "Certified AWS Cloud Practitioner ☁️",
+        "Certified AWS Developer Associate ☁️",
       ],
       startDelay: 0,
       typeSpeed: 80,
@@ -71,7 +70,7 @@ const Header = () => {
             </p>
 
             <p>
-              💼 Former Product Engineer skilled in solution design, pre-sales support, and technical proposals. Achievements include the Galloping Horse Award and TMForum certifications.
+              💼 Former Product Engineer skilled in solution design, pre-sales support, and technical proposals.
             </p>
 
 
