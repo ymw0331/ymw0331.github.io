@@ -52,28 +52,40 @@ const Header = () => {
         <motion.div>
           <div className="app__header-intro">
 
-            <h3 className="title-text text-uppercase">Hey, I am MingWei👋</h3>
+            <h3 className="title-text text-uppercase">Hey, I am MingWei 👋</h3>
             <h4 className="i-am-title text-uppercase">I am a {""}
               <span id="subheading"
                 ref={element}
               >
-
-              </span></h4>
+              </span>
+            </h4>
 
             <hr />
-            <p>💻 An information systems engineering 2021 graduate.</p>
 
-            <p>🌏 I’m currently working on</p>
+            <p>
+              🎓 Information Systems Engineering graduate with a merit degree.
+            </p>
 
-            <p>🤓 A passionate web developer exploring the edges of full stack <mark>JavaScript</mark>.</p>
+            <p>
+              💼 Technical Delivery Intern experienced in mobile development, CICD/DevOps, and automation testing.
+            </p>
 
-            <p>😎 Proficient in building end-to-end JavaScript web applications.</p>
+            <p>
+              💼 Former Product Engineer skilled in solution design, pre-sales support, and technical proposals. Achievements include the Galloping Horse Award and TMForum certifications.
+            </p>
 
-            <p>💯 Have a strong appetite to learn new technologies in a short span and implement
-              independently.</p>
 
-            <p>🛠 Committed to developing high standards secure web application, great UX, usability with good coding standards.</p>
+            <p>
+              🛠️ Focused on full stack development with expertise in the MERN stack. AWS Cloud Practitioner and Developer Associate certified.
+            </p>
 
+            <p>
+              💻 Passionate about innovative web applications. Check out my portfolio for MERN stack projects.
+            </p>
+
+            <p>
+              ✨ Seeking opportunities as a full stack developer or cloud engineer to contribute to cutting-edge projects.
+            </p>
             <p>
               <iframe
                 frameBorder="0"

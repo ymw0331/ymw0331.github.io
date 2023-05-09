@@ -7,7 +7,9 @@ import "./Educations.scss";
 const Educations = () => {
 
     //states
-    const [activeEduTabs, seActiveEduTabs] = useState([0]); // Set the first tab to be active by default
+    // const [activeEduTabs, setActiveEduTabs] = useState([0]); // Set the first tab to be active by default
+
+    const [activeEduTabs, setActiveEduTabs] = useState([0]); // Set the first tab to be active by default
     const [educations, setEducations] = useState([]);
 
     useEffect(() => {
@@ -20,11 +22,19 @@ const Educations = () => {
 
 
 
+    // const toggleTab = (tabIndex) => {
+    //     if (activeEduTabs.includes(tabIndex)) {
+    //         setActiveEduTabs(activeEduTabs.filter((index) => index !== tabIndex));
+    //     } else {
+    //         setActiveEduTabs([...activeEduTabs, tabIndex]);
+    //     }
+    // };
+
     const toggleTab = (tabIndex) => {
-        if (activeEduTabs.includes(tabIndex)) {
-            seActiveEduTabs(activeEduTabs.filter((index) => index !== tabIndex));
+        if (activeEduTabs.includes(tabIndex) && activeEduTabs.length > 1) {
+            setActiveEduTabs(activeEduTabs.filter((index) => index !== tabIndex));
         } else {
-            seActiveEduTabs([...activeEduTabs, tabIndex]);
+            setActiveEduTabs([tabIndex]);
         }
     };
 
@@ -72,7 +82,7 @@ const Educations = () => {
 };
 
 export default AppWrap(
-    MotionWrap(Educations, 'app__experiences'),
-    "experiences",
+    MotionWrap(Educations, 'app__educations'),
+    "educations",
     "app__whitebg"
 );
