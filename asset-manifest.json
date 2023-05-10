@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.80aaf3a8.css",
-    "main.js": "/static/js/main.7825c432.js",
+    "main.css": "/static/css/main.ed1bc9e2.css",
+    "main.js": "/static/js/main.c7f9bf69.js",
     "static/media/ymwLinkedInCircle.png": "/static/media/ymwLinkedInCircle.1c668a7d782d57172dec.png",
     "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/static/media/about02.7a3df03410ee756268ec.png",
@@ -10,6 +10,7 @@
     "static/media/about03.png": "/static/media/about03.c26c2547bb1a423cf283.png",
     "static/media/spotify.png": "/static/media/spotify.2b5e9be1eb1ab501e7cd.png",
     "static/media/nb.png": "/static/media/nb.98f3253e32cc67a4cb5e.png",
+    "static/media/ymw-memoji.png": "/static/media/ymw-memoji.5b6956dfb70f14136f60.png",
     "static/media/asus.png": "/static/media/asus.514bc34955008a92e09f.png",
     "static/media/adidas.png": "/static/media/adidas.83df8153294f9137d308.png",
     "static/media/bolt.png": "/static/media/bolt.64e7d9d30ece478ef3a0.png",
@@ -27,11 +28,11 @@
     "static/media/skype.png": "/static/media/skype.c8d7ee175da5b4c8a8ab.png",
     "index.html": "/index.html",
     "static/media/circle.svg": "/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.80aaf3a8.css.map": "/static/css/main.80aaf3a8.css.map",
-    "main.7825c432.js.map": "/static/js/main.7825c432.js.map"
+    "main.ed1bc9e2.css.map": "/static/css/main.ed1bc9e2.css.map",
+    "main.c7f9bf69.js.map": "/static/js/main.c7f9bf69.js.map"
   },
   "entrypoints": [
-    "static/css/main.80aaf3a8.css",
-    "static/js/main.7825c432.js"
+    "static/css/main.ed1bc9e2.css",
+    "static/js/main.c7f9bf69.js"
   ]
 }
