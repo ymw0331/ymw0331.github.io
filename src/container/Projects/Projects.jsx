@@ -16,7 +16,7 @@ const Projects = () => {
     const query = '*[_type == "projects"]';
 
     client.fetch(query).then((data) => {
-      console.log("Numbers of Projects ", projects.length)
+      // console.log("Numbers of Projects ", projects.length)
       setProjects(data);
       setFilterProject(data);
     });

@@ -1,25 +1,14 @@
 import React, { useRef, useEffect } from 'react';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { motion } from 'framer-motion';
-import lottie from 'lottie-web'
 import Typed from 'typed.js';
-import memoji from '../../assets/ymw-memoji.png'
+import { images } from '../../constants';
 import "./Header.scss";
 
 
 const Header = () => {
   const element = useRef(null);
-  const lottieContainer = useRef(null)
 
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: lottieContainer.current,
-      renderer: 'svg',
-      load: true,
-      autoplay: true,
-      animationData: require('../../assets/banner-coding.json')
-    })
-  }, [])
 
   useEffect(() => {
     const typed = new Typed(element.current, {
@@ -27,7 +16,7 @@ const Header = () => {
         "Enthusiastic Dev 😎",
         "Full Stack Developer 💻",
         "Certified AWS Cloud Practitioner ☁️",
-        "Certified AWS Developer Associate ☁️",
+        "Certified AWS Developer Associate 👨🏻‍💻",
       ],
       startDelay: 0,
       typeSpeed: 80,
@@ -85,6 +74,7 @@ const Header = () => {
             <p>
               ✨ Seeking opportunities as a full stack developer or cloud engineer to contribute to cutting-edge projects.
             </p>
+
             <p>
               <iframe
                 frameBorder="0"
@@ -117,9 +107,7 @@ const Header = () => {
                 </button>
 
                 <button type="button" className="btn button secondary-button text-uppercase second-btn">
-                  <a
-                    href="tel:+60 182205562">Hire Me
-                  </a>
+                  <a href="tel:+60182205562">Hire Me</a>
                 </button>
               </div>
             </div>
@@ -128,13 +116,9 @@ const Header = () => {
         </motion.div>
 
 
-        {/* <div className='lottieContainer'
-          // style={{ height: "500px", width: "500px" }}
-          ref={lottieContainer}>
-        </div> */}
 
         <div className="memojiContainer">
-          <img src={memoji} alt="my-memoji" />
+          <img src={images.memoji} alt="my-memoji" />
         </div>
       </div>
     </>

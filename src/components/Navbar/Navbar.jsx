@@ -23,7 +23,7 @@ const Navbar = () => {
 
         <NavLink aria-current="page" to="/">
           <img
-            src={images.ymwLinkedInCircle}
+            src={images.profile}
             alt="logo"
           />
         </NavLink>

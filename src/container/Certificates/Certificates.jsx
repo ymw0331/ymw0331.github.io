@@ -15,7 +15,7 @@ const Certificates = () => {
         const query = '*[_type == "certificates"]';
 
         client.fetch(query).then((data) => {
-            console.log("Numbers of Certs ", certs.length)
+            // console.log("Numbers of Certs ", certs.length)
             setCerts(data);
             setFilterCert(data);
         });
