@@ -75,7 +75,7 @@ const Header = () => {
 
 
             <p>
-              🛠️ Focused on full stack development with expertise in the <mark>MERN</mark> stack. AWS Cloud Practitioner and Developer Associate certified.
+              🛠️ Focused on full stack development with expertise in the <span></span>MERN stack. AWS Cloud Practitioner and Developer Associate certified.
             </p>
 
             <p>
