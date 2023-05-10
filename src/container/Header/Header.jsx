@@ -3,7 +3,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { motion } from 'framer-motion';
 import lottie from 'lottie-web'
 import Typed from 'typed.js';
-
+import memoji from '../../assets/ymw-memoji.png'
 import "./Header.scss";
 
 
@@ -125,15 +125,18 @@ const Header = () => {
             </div>
           </div>
 
-
         </motion.div>
 
+
         {/* <div className='lottieContainer'
-          style={{ height: "500px", width: "500px" }}
-          ref={lottieContainer}></div> */}
+          // style={{ height: "500px", width: "500px" }}
+          ref={lottieContainer}>
+        </div> */}
 
+        <div className="memojiContainer">
+          <img src={memoji} alt="my-memoji" />
+        </div>
       </div>
-
     </>
   );
 };

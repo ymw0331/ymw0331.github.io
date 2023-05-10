@@ -19,7 +19,7 @@ const Certificates = () => {
             setCerts(data);
             setFilterCert(data);
         });
-    }, []);
+    }, [certs.length]);
 
     const handleCertFilter = (item) => {
         setActiveFilter(item);
@@ -38,7 +38,7 @@ const Certificates = () => {
 
     return (
         <>
-            <h2 className="head-text">Certificates & Awards</h2>
+            <h2 className="head-text"><span>Certificates</span> & Awards</h2>
 
             <div className="app__cert-filter">
                 {['AWS', 'TMForum', 'Huawei', 'Udemy', 'Sololearn', 'All'].map((item, index) => (

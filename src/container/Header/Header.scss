@@ -16,144 +16,160 @@
   @media screen and (max-width:400px) {
     padding: 6rem 1rem 2rem;
   }
+
+
+
+  .app__header-intro {
+    flex: 1;
+    width: 100%;
+    flex-direction: row;
+    padding: 2rem 2rem;
+
+    p {
+      font-size: 20px;
+      padding: 7.5px;
+    }
+
+    .title-text {
+      font: normal bold 45px/ 72px var(--font-base);
+      padding-bottom: 20px;
+      padding-top: 5px;
+    }
+
+    .i-am-title {
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+
+    #subheading {
+      color: var(--secondary-color);
+    }
+
+    .text-uppercase {
+      text-transform: uppercase;
+    }
+
+    .first-btn a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .first-btn a:hover {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .second-btn a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .second-btn a:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+
+
+  .app__header-buttons {
+    padding-top: 10px;
+
+    .button {
+      padding: 0.8rem 2.2rem;
+      font: normal 500 16px/20px var(--font-base);
+      position: relative;
+      border: 3px solid transparent;
+      border-radius: 4px;
+    }
+
+    .button.primary-button {
+      background: var(--gradient-color);
+      background-clip: padding-box;
+      color: whitesmoke;
+      box-shadow: var(--box-shadow);
+    }
+
+    .button.primary-button:hover {
+      background: whitesmoke;
+      background-clip: padding-box;
+      color: black;
+    }
+
+    .button.primary-button::after,
+    .button.secondary-button::after {
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      bottom: -2px;
+      right: -2px;
+      background: var(--gradient-color);
+      content: ' ';
+      z-index: -1;
+      border-radius: 4px;
+    }
+
+    .button.secondary-button {
+      background: white;
+      background-clip: padding-box;
+    }
+
+    .button.secondary-button:hover {
+      background: var(--gradient-color);
+      color: whitesmoke;
+      box-shadow: var(--box-shadow);
+    }
+
+    .first-btn a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .first-btn a:hover {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .second-btn a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .second-btn a:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .site-title p a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .button.secondary-button:hover a {
+      color: whitesmoke;
+    }
+
+    .button.primary-button:hover a {
+      color: black;
+    }
+  }
+
+  .memojiContainer {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 2rem;
+
+    @media screen and (max-width: 1000px) {
+      max-width: 300px;
+      margin-top: 1rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
 }
-
-.app__header-intro {
-  flex: 1;
-  width: 100%;
-  flex-direction: row;
-  padding: 2rem 2rem;
-
-  p {
-    font-size: 20px;
-    padding: 7.5px;
-  }
-
-  .title-text {
-    font: normal bold 45px/ 72px var(--font-base);
-    padding-bottom: 20px;
-    padding-top: 5px;
-  }
-
-  .i-am-title {
-    font-size: 25px;
-    padding-bottom: 20px;
-  }
-
-  #subheading {
-    color: var(--secondary-color);
-  }
-
-  .text-uppercase {
-    text-transform: uppercase;
-  }
-
-  .first-btn a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .first-btn a:hover {
-    text-decoration: none;
-    color: #000;
-  }
-
-  .second-btn a {
-    text-decoration: none;
-    color: #000;
-  }
-
-  .second-btn a:hover {
-    text-decoration: none;
-    color: #fff;
-  }
-}
-
-
-
-.app__header-buttons {
-  padding-top: 10px;
-
-  .button {
-    padding: 0.8rem 2.2rem;
-    font: normal 500 16px/20px var(--font-base);
-    position: relative;
-    border: 3px solid transparent;
-    border-radius: 4px;
-  }
-
-  .button.primary-button {
-    background: var(--gradient-color);
-    background-clip: padding-box;
-    color: whitesmoke;
-    box-shadow: var(--box-shadow);
-  }
-
-  .button.primary-button:hover {
-    background: whitesmoke;
-    background-clip: padding-box;
-    color: black;
-  }
-
-  .button.primary-button::after,
-  .button.secondary-button::after {
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    bottom: -2px;
-    right: -2px;
-    background: var(--gradient-color);
-    content: ' ';
-    z-index: -1;
-    border-radius: 4px;
-  }
-
-  .button.secondary-button {
-    background: white;
-    background-clip: padding-box;
-  }
-
-  .button.secondary-button:hover {
-    background: var(--gradient-color);
-    color: whitesmoke;
-    box-shadow: var(--box-shadow);
-  }
-
-  .first-btn a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .first-btn a:hover {
-    text-decoration: none;
-    color: #000;
-  }
-
-  .second-btn a {
-    text-decoration: none;
-    color: #000;
-  }
-
-  .second-btn a:hover {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .site-title p a {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
-  .button.secondary-button:hover a {
-    color: whitesmoke;
-  }
-
-  .button.primary-button:hover a {
-    color: black;
-  }
-}
-
-
 
 // #home {
 //   position: relative;

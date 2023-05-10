@@ -20,7 +20,7 @@ const Projects = () => {
       setProjects(data);
       setFilterProject(data);
     });
-  }, []);
+  }, [projects.length]);
 
   const handleProjectFilter = (item) => {
     setActiveFilter(item);
