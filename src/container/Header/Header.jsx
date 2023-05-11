@@ -100,8 +100,10 @@ const Header = () => {
               <div className="d-flex flex-row flex-wrap">
                 <button type="button" className="btn button primary-button mr-4 text-uppercase first-btn">
                   <a
-                    href="./assets/ymw.pdf" target="_blank">RESUME &nbsp;<i
-                      className="fas fa-external-link-alt" aria-hidden="true"></i>
+                    // href="../../assets/MingWeiYong-Full_Stack_Developer.pdf"
+                    href="https://onedrive.live.com/?authkey=%21AEtHs3oe%5FdMcRzI&cid=5B854AA5CAD8A8AB&id=5B854AA5CAD8A8AB%211474611&parId=5B854AA5CAD8A8AB%211401387&o=OneUp"
+                    target="_blank">RESUME &nbsp;
+                    <i className="fas fa-external-link-alt" aria-hidden="true"></i>
 
                   </a>
                 </button>
