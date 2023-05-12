@@ -4,10 +4,11 @@ import { motion } from 'framer-motion';
 import Typed from 'typed.js';
 import { images } from '../../constants';
 import "./Header.scss";
-
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const element = useRef(null);
+
 
 
   useEffect(() => {
@@ -64,11 +65,33 @@ const Header = () => {
 
 
             <p>
-              🛠️ Focused on full stack development with expertise in the <mark>MERN</mark> stack. <mark>AWS Cloud Practitioner and Developer Associate</mark> certified.
+              🛠️ Focused on full stack development with expertise in the
+              {" "}
+              <mark>MERN</mark> stack. {" "}
+
+              <mark>
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://www.credly.com/badges/cb9d8197-7e50-4e66-878e-b6f0990f3575">
+                  AWS Cloud Practitioner
+                </a>
+              </mark>
+              {" "}
+              and {" "} <mark>
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://www.credly.com/badges/1c60537d-1c38-40b8-ae51-1f43739b80b6">
+                  Developer Associate
+                </a>
+                {" "}
+              </mark> certified.
             </p>
 
             <p>
-              💻 Passionate about innovative web applications. Check out my portfolio for MERN stack projects.
+              💻 Passionate about innovative web applications. Check out my
+              <NavLink style={{ textDecoration: "none", color: "#4458dc" }} to="/projects"> portfolio  </NavLink>
+
+              for MERN stack projects.
             </p>
 
             <p>
