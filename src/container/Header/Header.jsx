@@ -5,6 +5,8 @@ import Typed from 'typed.js';
 import { images } from '../../constants';
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
+import pdfFile from '../../assets/YongMingWei-Full_Stack_Developer_120523.pdf';
+
 
 const Header = () => {
   const element = useRef(null);
@@ -128,11 +130,9 @@ const Header = () => {
                 <button type="button" className="btn button primary-button mr-4 text-uppercase first-btn">
                   <a
                     // href="https://drive.google.com/file/d/1oGemmZjwaGM83kYC7ahw3addJuOIz8xV/view?usp=sharing"
-                    href="../../assets/MingWeiYong-Full_Stack_Developer.pdf"
-
-                    target="_blank" rel="noreferrer">RESUME &nbsp;
+                    href={pdfFile} target="_blank" rel="noreferrer">
+                    RESUME &nbsp;
                     <i className="fas fa-external-link-alt" aria-hidden="true"></i>
-
                   </a>
                 </button>
 
@@ -141,6 +141,8 @@ const Header = () => {
                 </button>
               </div>
             </div>
+
+
           </div>
 
         </motion.div>
