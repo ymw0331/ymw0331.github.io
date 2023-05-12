@@ -78,7 +78,8 @@ const Header = () => {
               <mark>
                 <a
                   style={{ textDecoration: "none" }}
-                  href="https://www.credly.com/badges/cb9d8197-7e50-4e66-878e-b6f0990f3575">
+                  target="_blank"
+                  href="https://www.credly.com/badges/cb9d8197-7e50-4e66-878e-b6f0990f3575" rel="noreferrer">
                   AWS Cloud Practitioner
                 </a>
               </mark>
@@ -86,7 +87,8 @@ const Header = () => {
               and {" "} <mark>
                 <a
                   style={{ textDecoration: "none" }}
-                  href="https://www.credly.com/badges/1c60537d-1c38-40b8-ae51-1f43739b80b6">
+                  target="_blank"
+                  href="https://www.credly.com/badges/1c60537d-1c38-40b8-ae51-1f43739b80b6" rel="noreferrer">
                   Developer Associate
                 </a>
                 {" "}
