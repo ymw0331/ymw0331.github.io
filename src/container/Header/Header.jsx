@@ -67,7 +67,11 @@ const Header = () => {
             <p>
               🛠️ Focused on full stack development with expertise in the
               {" "}
-              <mark>MERN</mark> stack. {" "}
+              <mark>
+                <NavLink style={{ textDecoration: "none" }} to="/certificates">MERN</NavLink>
+              </mark>
+
+              {" "}stack. {" "}
 
               <mark>
                 <a
