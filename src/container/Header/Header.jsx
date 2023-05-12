@@ -64,7 +64,7 @@ const Header = () => {
 
 
             <p>
-              🛠️ Focused on full stack development with expertise in the <mark>MERN</mark> stack. AWS Cloud Practitioner and Developer Associate certified.
+              🛠️ Focused on full stack development with expertise in the <mark>MERN</mark> stack. <mark>AWS Cloud Practitioner and Developer Associate</mark> certified.
             </p>
 
             <p>
@@ -100,9 +100,8 @@ const Header = () => {
               <div className="d-flex flex-row flex-wrap">
                 <button type="button" className="btn button primary-button mr-4 text-uppercase first-btn">
                   <a
-                    // href="../../assets/MingWeiYong-Full_Stack_Developer.pdf"
-                    href="https://onedrive.live.com/?authkey=%21AEtHs3oe%5FdMcRzI&cid=5B854AA5CAD8A8AB&id=5B854AA5CAD8A8AB%211474611&parId=5B854AA5CAD8A8AB%211401387&o=OneUp"
-                    target="_blank">RESUME &nbsp;
+                    href="https://drive.google.com/file/d/1oGemmZjwaGM83kYC7ahw3addJuOIz8xV/view?usp=sharing"
+                    target="_blank" rel="noreferrer">RESUME &nbsp;
                     <i className="fas fa-external-link-alt" aria-hidden="true"></i>
 
                   </a>
