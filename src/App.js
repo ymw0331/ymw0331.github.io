@@ -1,5 +1,5 @@
 import React, { useContext, Fragment } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { About, Footer, Header, Skills, Projects, Certificates, Experiences, Educations } from './container';
 import { Navbar } from './components';
 import { DarkModeContext } from "./contexts/DarkModeContext";
@@ -11,6 +11,7 @@ const NotFound = () => {
     <div className="not-found">
       <h1 className="not-found-title">404 - Page Not Found</h1>
       <p className="not-found-message">The requested page does not exist.</p>
+      <Link to="/" className="not-found-link">Go to Homepage</Link>
     </div>
   );
 };
