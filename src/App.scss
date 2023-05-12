@@ -231,3 +231,22 @@
     padding: 2rem;
   }
 }
+
+
+.not-found {
+  text-align: center;
+  margin-top: 50px;
+  font-family: var(--font-base);
+
+  .not-found-title {
+    font-size: 36px;
+    color: #ff0000;
+    font-family: var(--font-base);
+  }
+
+  .not-found-message {
+    font-size: 18px;
+    color: #777777;
+    font-family: var(--font-base);
+  }
+}

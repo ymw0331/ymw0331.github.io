@@ -127,7 +127,9 @@ const Header = () => {
               <div className="d-flex flex-row flex-wrap">
                 <button type="button" className="btn button primary-button mr-4 text-uppercase first-btn">
                   <a
-                    href="https://drive.google.com/file/d/1oGemmZjwaGM83kYC7ahw3addJuOIz8xV/view?usp=sharing"
+                    // href="https://drive.google.com/file/d/1oGemmZjwaGM83kYC7ahw3addJuOIz8xV/view?usp=sharing"
+                    href="../../assets/MingWeiYong-Full_Stack_Developer.pdf"
+
                     target="_blank" rel="noreferrer">RESUME &nbsp;
                     <i className="fas fa-external-link-alt" aria-hidden="true"></i>
 
