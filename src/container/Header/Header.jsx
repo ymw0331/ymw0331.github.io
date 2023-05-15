@@ -91,7 +91,6 @@ const Header = () => {
                   href="https://www.credly.com/badges/1c60537d-1c38-40b8-ae51-1f43739b80b6" rel="noreferrer">
                   Developer Associate
                 </a>
-                {" "}
               </mark> certified.
             </p>
 
