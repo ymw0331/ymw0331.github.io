@@ -5,7 +5,7 @@ import Typed from 'typed.js';
 import { images } from '../../constants';
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
-import pdfFile from '../../assets/YongMingWei-Full_Stack_Developer_120523.pdf';
+import pdfFile from '../../assets/YONG_MING_WEI.pdf';
 
 
 const Header = () => {
