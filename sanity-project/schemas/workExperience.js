@@ -20,6 +20,11 @@ export default {
             type: 'string'
         },
         {
+            name: 'companyLink',
+            title: 'CompanyLink',
+            type: 'string'
+        },
+        {
             name: 'desc',
             title: 'Desc',
             type: 'array',

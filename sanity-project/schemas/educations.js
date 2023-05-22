@@ -14,6 +14,11 @@ export default {
             type: 'string',
         },
         {
+            name: 'universityLink',
+            title: 'UniversityLink',
+            type: 'string',
+        },
+        {
             name: 'degree',
             title: 'Degree',
             type: 'string',

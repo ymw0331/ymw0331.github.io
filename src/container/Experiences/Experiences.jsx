@@ -54,7 +54,21 @@ const Experiences = () => {
                                         onChange={() => toggleTab(index)}
                                     />
                                     <label className="tab-label" htmlFor={`chck${index}`}>
-                                        🏢  {workEx.company}  💼  {workEx.name}  📅  {workEx.year}
+                                        {" "}
+
+                                        <a href={`${workEx.companyLink}`}
+                                            style={{ textDecoration: "none" }}>
+                                            🏢  {workEx.company}
+                                        </a>
+
+                                        {" "}
+                                        💼  {workEx.name}
+
+                                        {" "}
+
+                                        📅  {workEx.year}
+                                        {" "}
+
                                     </label>
                                     <div className="tab-content">
                                         {workEx.desc.map((desc, i) => (

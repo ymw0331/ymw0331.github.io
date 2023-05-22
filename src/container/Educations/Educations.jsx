@@ -64,7 +64,16 @@ const Educations = () => {
                                         onChange={() => toggleTab(index)}
                                     />
                                     <label className="tab-label" htmlFor={`chck${index}`}>
-                                        🏫 {edu.university}     📅  {edu.year}
+
+
+                                        <a href={`${edu.universityLink}`}
+                                            style={{ textDecoration: "none" }}>
+                                            🏫 {edu.university}
+
+                                        </a>
+
+
+                                        📅  {edu.year}
                                     </label>
                                     <div className="tab-content">
                                         {edu.desc.map((desc, i) => (
