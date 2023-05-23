@@ -56,10 +56,17 @@ const Experiences = () => {
                                     <label className="tab-label" htmlFor={`chck${index}`}>
                                         {" "}
 
-                                        <a href={`${workEx.companyLink}`}
-                                            style={{ textDecoration: "none" }}>
+                                        <a
+                                            style={{ textDecoration: "none" }}
+                                            target="_blank"
+                                            href={`${workEx.companyLink}`}
+                                            rel="noreferrer"
+                                        >
                                             🏢  {workEx.company}
+
                                         </a>
+
+
 
                                         {" "}
                                         💼  {workEx.name}

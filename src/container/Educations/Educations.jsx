@@ -65,11 +65,13 @@ const Educations = () => {
                                     />
                                     <label className="tab-label" htmlFor={`chck${index}`}>
 
-
-                                        <a href={`${edu.universityLink}`}
-                                            style={{ textDecoration: "none" }}>
+                                        <a
+                                            style={{ textDecoration: "none" }}
+                                            target="_blank"
+                                            href={`${edu.universityLink}`}
+                                            rel="noreferrer"
+                                        >
                                             🏫 {edu.university}
-
                                         </a>
 
 
@@ -84,8 +86,8 @@ const Educations = () => {
                             ))}
                         </motion.div>
                     </div>
-                </div>
-            </div>
+                </div >
+            </div >
         </>
     );
 };

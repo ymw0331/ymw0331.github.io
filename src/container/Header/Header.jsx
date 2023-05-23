@@ -43,7 +43,7 @@ const Header = () => {
         <motion.div>
           <div className="app__header-intro">
 
-            <h3 className="title-text text-uppercase">Hey, I am MingWei 👋</h3>
+            <h3 className="title-text text-uppercase">Hey, I am Ming Wei 👋</h3>
             <h4 className="i-am-title text-uppercase">I am a {""}
               <span id="subheading"
                 ref={element}
@@ -88,7 +88,8 @@ const Header = () => {
                 <a
                   style={{ textDecoration: "none" }}
                   target="_blank"
-                  href="https://www.credly.com/badges/1c60537d-1c38-40b8-ae51-1f43739b80b6" rel="noreferrer">
+                  href="https://www.credly.com/badges/1c60537d-1c38-40b8-ae51-1f43739b80b6" rel="noreferrer"
+                  >
                   Developer Associate
                 </a>
               </mark> certified.
