@@ -5,7 +5,8 @@ import Typed from 'typed.js';
 import { images } from '../../constants';
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
-import pdfFile from '../../assets/YONG_MING_WEI.pdf';
+// import pdfFile from '../../assets/YONG_MING_WEI.pdf';
+import pdfFile from '../../assets/US_YONG MING WEI (Wayne)_100623.pdf';
 
 
 const Header = () => {
@@ -138,11 +139,10 @@ const Header = () => {
                 </button>
 
                 <button type="button" className="btn button secondary-button text-uppercase second-btn">
-                  <a href="tel:+60182205562">Hire Me</a>
+                  <a href="tel:+13478885256">Hire Me</a>
                 </button>
               </div>
             </div>
-
 
           </div>
 
