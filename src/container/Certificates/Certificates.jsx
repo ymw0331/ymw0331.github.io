@@ -41,7 +41,7 @@ const Certificates = () => {
             <h2 className="head-text"><span>Certificates</span> & Awards</h2>
 
             <div className="app__cert-filter">
-                {['AWS', 'TMForum', 'Udemy', 'Huawei', 'Sololearn', 'All'].map((item, index) => (
+                {['AWS', 'TMForum', 'Udemy', 'Huawei', 'All'].map((item, index) => (
                     <div
                         key={index}
                         onClick={() => handleCertFilter(item)}
