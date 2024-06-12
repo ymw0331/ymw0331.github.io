@@ -54,15 +54,27 @@ const Header = () => {
             <hr />
 
             <p>
+              💼 Currently working as a Full Stack Developer at 
+              <a 
+                style={{textDecoration: "none"}} 
+                href="https://3enix.com" 
+                target="_blank" 
+                rel="noreferrer"
+              >{" "}
+                3enix
+              </a>.
+            </p>
+
+            <p>
               🎓 Information Systems Engineering graduate with a merit degree.
             </p>
 
             <p>
-              💼 Technical Delivery Intern experienced in mobile development, CICD/DevOps, and automation testing.
+              🎓 Information Systems Engineering graduate with a merit degree.
             </p>
 
             <p>
-              💼 Former Product Engineer skilled in solution design, pre-sales support, and technical proposals.
+              💼 Former Assistant Product Engineer skilled in solution design, pre-sales support, and technical proposals.
             </p>
 
 
