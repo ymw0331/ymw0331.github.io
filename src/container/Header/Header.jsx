@@ -54,19 +54,15 @@ const Header = () => {
             <hr />
 
             <p>
-              💼 Currently working as a Full Stack Developer at 
-              <a 
-                style={{textDecoration: "none"}} 
-                href="https://3enix.com" 
-                target="_blank" 
+              💼  Currently working as a Full Stack Developer at
+              <a
+                style={{ textDecoration: "none" }}
+                href="https://3enix.com"
+                target="_blank"
                 rel="noreferrer"
               >{" "}
                 3enix
               </a>.
-            </p>
-
-            <p>
-              🎓 Information Systems Engineering graduate with a merit degree.
             </p>
 
             <p>
@@ -101,7 +97,7 @@ const Header = () => {
                   style={{ textDecoration: "none" }}
                   target="_blank"
                   href="https://www.credly.com/badges/1c60537d-1c38-40b8-ae51-1f43739b80b6" rel="noreferrer"
-                  >
+                >
                   Developer Associate
                 </a>
               </mark> certified.
