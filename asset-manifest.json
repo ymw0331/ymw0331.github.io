@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.b0c010ab.css",
-    "main.js": "/static/js/main.d07937ad.js",
+    "main.js": "/static/js/main.32ebd599.js",
     "static/media/profile.png": "/static/media/profile.1c668a7d782d57172dec.png",
-    "static/media/MY_YONG MING WEI (Wayne)_090624.pdf": "/static/media/MY_YONG MING WEI (Wayne)_090624.b018436a1262a0547d12.pdf",
+    "static/media/MY_YONG MING WEI_190724.pdf": "/static/media/MY_YONG MING WEI_190724.b485142476b5b3796976.pdf",
     "static/media/memoji.png": "/static/media/memoji.5b6956dfb70f14136f60.png",
     "static/media/mobile.png": "/static/media/mobile.145d9ce0157a56f8fcd8.png",
     "static/media/email.png": "/static/media/email.37b9e890eea501421fbf.png",
     "index.html": "/index.html",
     "main.b0c010ab.css.map": "/static/css/main.b0c010ab.css.map",
-    "main.d07937ad.js.map": "/static/js/main.d07937ad.js.map"
+    "main.32ebd599.js.map": "/static/js/main.32ebd599.js.map"
   },
   "entrypoints": [
     "static/css/main.b0c010ab.css",
-    "static/js/main.d07937ad.js"
+    "static/js/main.32ebd599.js"
   ]
 }
