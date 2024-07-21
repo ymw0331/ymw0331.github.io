@@ -5,7 +5,7 @@ import Typed from 'typed.js';
 import { images } from '../../constants';
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
-import pdfFile from '../../assets/MY_YONG MING WEI (Wayne)_090624.pdf';
+import pdfFile from '../../assets/MY_YONG MING WEI_190724.pdf';
 
 
 const Header = () => {
